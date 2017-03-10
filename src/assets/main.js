@@ -3,7 +3,7 @@ $(function() {
     url: 'https://www.codeschool.com/users/2987780.json',
     dataType: 'jsonp',
     success: function(response) {
-      addCourses('response', response.course.completed);
+      addCourses(response.courses.completed);
 
     }
   });
