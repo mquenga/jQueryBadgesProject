@@ -26,6 +26,13 @@ $(function() {
         src:course.badge
       }).appendTo($course);
 
+      $('<a />',{
+        'class': 'btn ntn-primary',
+        target: '_blank',
+        href: course.url,
+        text: 'See Course'
+      }).appendTo($course);
+
     })
   }
 });
