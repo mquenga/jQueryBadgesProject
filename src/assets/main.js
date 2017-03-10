@@ -8,18 +8,16 @@ $(function() {
     }
   });
 
-  function addCourses(courses){
+  function addCourses(courses) {
 
-    var badges = $('#badges');
+    var $badges = $('#badges');
 
     courses.forEach(function(course){
 
-      var $course = $('<div />', {
+       $('<div />', {
         'class': 'course'
       }).appendTo($badges);
-      $('<h3 />', {
-        text: course.title
-      }).appendTo($course);
+
     })
   }
 });
